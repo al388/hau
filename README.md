@@ -6,7 +6,6 @@ user_agent = [
     'Instagram 8.4.0 (iPhone7,2; iPhone OS 9_3_2; nb_NO; nb-NO; scale=2.00; 750x1334',
     'Instagram 93.1.0.19.102 Android (21/5.0.2; 240dpi; 540x960; samsung; SM-G530H; fortuna3g; qcom; ar_AE; 154400379)'
 ]
-ic="874919066"
 X=int(input("[?] With telegram ? \n[!] 0 = NO | 1 = YES\n+> "))
 if X == 1 :
 	try:
