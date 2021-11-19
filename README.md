@@ -9,7 +9,7 @@ user_agent = [
 X=int(input("[?] With telegram ? \n[!] 0 = NO | 1 = YES\n+> "))
 if X == 1 :
 	try:
-		tel=requests.post(f"https://api.telegram.org/bot2025157803:AAHetK41bvjw0ker2huKvoUeXwyWzYIf_-0/sendMessage?chat_id={ic}&text=HI\nIf you have a problem tell me\nINSTA : @M0B.STORE | TELE : @ZXXXXZV")
+		tel=requests.post(f"https://api.telegram.org/bot2025157803:AAEyKd5RxKtpa6R1cLU-OWWyLQOIGddJWkI/sendMessage?chat_id={ic}&text=HI\nIf you have a problem tell me\nINSTA : @M0B.STORE | TELE : @ZXXXXZV")
 	except:
 		print("[!] Try with VPN ")
 		input("")
@@ -126,7 +126,7 @@ def ops ():
 	except:
 		print("\033[1;30m[\033[0;37m$\033[1;30m] data : \033[1;31mFalse ")
 	if X == 1:
-		tel=requests.post(f"https://api.telegram.org/bot2025157803:AAHetK41bvjw0ker2huKvoUeXwyWzYIf_-0/sendMessage?chat_id={ic}&text=NEW OLD ACC\nUser : {user}\nEmail : {eml} Available or ban\nPhone : {po}\nData : {x2}\nINSTA : @M0B.STORE | TELE : @ZXXXXZV")
+		tel=requests.post(f"https://api.telegram.org/bot2025157803:AAEyKd5RxKtpa6R1cLU-OWWyLQOIGddJWkI/sendMessage?chat_id={ic}&text=NEW OLD ACC\nUser : {user}\nEmail : {eml} Available or ban\nPhone : {po}\nData : {x2}\nINSTA : @M0B.STORE | TELE : @ZXXXXZV")
 	else:
 		pass
 	print('\n'+'\033[1;30m='*20+'\n')
