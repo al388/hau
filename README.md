@@ -1,4 +1,6 @@
 import requests,os,random
+import webbrowser
+webbrowser.open("https://instagram.com/968.ops?utm_medium=copy_link")
 from time import sleep
 user_agent = [
     "Instagram 99.4.0 S3od_al3nzi (Dmaral3noOoz)",'Instagram 155.0.0.37.107 Android (28/9; 320dpi; 720x1468; samsung; SM-A102U; a10e; exynos7885; en_US; 239490550)',
