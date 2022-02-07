@@ -1,6 +1,6 @@
 import requests,os,random
 import webbrowser
-webbrowser.open("https://instagram.com/968.ops?utm_medium=copy_link")
+webbrowser.open("https://instagram.com/DOOM.OLD?utm_medium=copy_link")
 from time import sleep
 user_agent = [
     "Instagram 99.4.0 S3od_al3nzi (Dmaral3noOoz)",'Instagram 155.0.0.37.107 Android (28/9; 320dpi; 720x1468; samsung; SM-A102U; a10e; exynos7885; en_US; 239490550)',
@@ -19,7 +19,7 @@ if X == 1 :
 else:
 	pass
 os.system('cls' if os.name == 'nt' else 'clear')#DOOM
-print("""\033[0;97m𝐈𝐍𝐒𝐓𝐀 : 𝟗𝟔𝟖.𝐎𝐏𝐒\n\033[1;34m𝐈𝐟 𝐲𝐨𝐮 𝐡𝐚𝐯𝐞 𝐚 𝐩𝐫𝐨𝐛𝐥𝐞𝐦, 𝐭𝐞𝐥𝐥 𝐦𝐞 𝐨𝐧 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦""")
+print("""\033[0;97mINSTA : DOOM.OLD\n\033[1;34m𝐈𝐟 𝐲𝐨𝐮 𝐡𝐚𝐯𝐞 𝐚 𝐩𝐫𝐨𝐛𝐥𝐞𝐦, 𝐭𝐞𝐥𝐥 𝐦𝐞 𝐨𝐧 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦""")
 def ops ():
 	print('\n'+'\033[1;30m='*20+'\n')
 	user=input("\033[1;30m[\033[0;37m?\033[1;30m] username or url user :\033[0;37m")
