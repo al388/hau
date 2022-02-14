@@ -11,7 +11,9 @@ user_agent = [
 X=int(input("[?] With telegram ? \n[!] 0 = NO | 1 = YES\n+> "))
 if X == 1 :
 	try:
-		tel=requests.post(f"https://api.telegram.org/bot2025157803:AAEyKd5RxKtpa6R1cLU-OWWyLQOIGddJWkI/sendMessage?chat_id={ic}&text=HI\nIf you have a problem tell me\nINSTA : @M0B.STORE | TELE : @ZXXXXZV")
+		tok=input("[?] TOKEN : ")
+		ic=input("[?] ID : ")
+		tel=requests.post(f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={ic}&text=HI\nIf you have a problem tell me\nINSTA : @DOOM.OLD| TELE : @ZXXXXZV")
 	except:
 		print("[!] Try with VPN ")
 		input("")
@@ -22,7 +24,7 @@ os.system('cls' if os.name == 'nt' else 'clear')#DOOM
 print("""\033[0;97mINSTA : DOOM.OLD\n\033[1;34m𝐈𝐟 𝐲𝐨𝐮 𝐡𝐚𝐯𝐞 𝐚 𝐩𝐫𝐨𝐛𝐥𝐞𝐦, 𝐭𝐞𝐥𝐥 𝐦𝐞 𝐨𝐧 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦""")
 def ops ():
 	print('\n'+'\033[1;30m='*20+'\n')
-	user=input("\033[1;30m[\033[0;37m?\033[1;30m] username or url user :\033[0;37m")
+	user=input("\033[1;30m[\033[0;37m?\033[1;30m] username or url user : \033[0;37m")
 	try:
 		user=user.split("/")[3]
 		user=user.split("?")[0] or user.split("/")[0]
@@ -41,21 +43,34 @@ def ops ():
 		re = requests.post(url, headers=headers, cookies=cookies, data=data)
 		if re.status_code == 200:
 			pass
-		elif re.status_code == 409 or 404:
-			print("\033[1;31m[!] username bad !")
+		elif "Please wait a few minutes before you try again." in re.text:
+			print("\033[1;31m[!] wait 5m")
 			print('\n'+'\033[1;30m='*20+'\n')
-			ops()
-		elif re.status_code == 429:
+			sleep(60*5)
+		elif '"message":"يرجى الانتظار لبضع دقائق قبل إعادة المحاولة.","status":"fail"' in re.text :
 			print("\033[1;31m[!] wait 5m")
 			print('\n'+'\033[1;30m='*20+'\n')
 			sleep(60*5)
 			ops()
+		elif '"message":"No users found","status":"fail"' in re.text :
+			print("\033[1;31m[!] No usere found")
+			print('\n'+'\033[1;30m='*20+'\n')
+			ops()
+		elif '{"message":"لم يتم العثور على مستخدمين","status":"fail"}'in re.text:
+			print("\033[1;31m[!] No usere found")
+			print('\n'+'\033[1;30m='*20+'\n')
+			ops()
+		elif "spam" in re.text:
+			print("\033[1;31m[!] spam - try with VPN")
+			ops()
+		else:
+			print("\033[1;31m[!] error")
+			print(re.text)
+			print(re.status_code)
+			ops()
 		info = re.json()
 	except:
 		print("\033[1;31m[!] there is no Internet")
-		print('\n'+'\033[1;30m='*20+'\n')
-		ops()
-	try:
 		print("\033[1;30m[\033[0;37m$\033[1;30m] Email :\033[1;32m "+info['obfuscated_email'])
 		m1=(user[0])
 		m2=(user[-1])
@@ -128,7 +143,7 @@ def ops ():
 	except:
 		print("\033[1;30m[\033[0;37m$\033[1;30m] data : \033[1;31mFalse ")
 	if X == 1:
-		tel=requests.post(f"https://api.telegram.org/bot2025157803:AAEyKd5RxKtpa6R1cLU-OWWyLQOIGddJWkI/sendMessage?chat_id={ic}&text=NEW OLD ACC\nUser : {user}\nEmail : {eml} Available or ban\nPhone : {po}\nData : {x2}\nINSTA : @M0B.STORE | TELE : @ZXXXXZV")
+		tel=requests.post(f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={ic}&text=NEW OLD ACC\nUser : {user}\nEmail : {eml} Available or ban\nPhone : {po}\nData : {x2}\nINSTA : @DOOM.OLD | TELE : @ZXXXXZV")
 	else:
 		pass
 	print('\n'+'\033[1;30m='*20+'\n')
