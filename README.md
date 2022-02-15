@@ -71,6 +71,7 @@ def ops ():
 		info = re.json()
 	except:
 		print("\033[1;31m[!] there is no Internet")
+	try:
 		print("\033[1;30m[\033[0;37m$\033[1;30m] Email :\033[1;32m "+info['obfuscated_email'])
 		m1=(user[0])
 		m2=(user[-1])
